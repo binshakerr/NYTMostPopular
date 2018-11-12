@@ -11,12 +11,14 @@
 		7699C889688FEEA3033ACE62 /* Pods_NYTMostPopularUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FBB4BCF45273FC7E62469C /* Pods_NYTMostPopularUITests.framework */; };
 		8096503C16ABE2F3A7C1DA77 /* Pods_NYTMostPopular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9C846B4F10C9E657E52275 /* Pods_NYTMostPopular.framework */; };
 		DCCBF43A219A10D00093A251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF439219A10D00093A251 /* AppDelegate.swift */; };
-		DCCBF43C219A10D00093A251 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF43B219A10D00093A251 /* ViewController.swift */; };
 		DCCBF43F219A10D00093A251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCBF43D219A10D00093A251 /* Main.storyboard */; };
 		DCCBF441219A10D10093A251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCCBF440219A10D10093A251 /* Assets.xcassets */; };
 		DCCBF444219A10D10093A251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCBF442219A10D10093A251 /* LaunchScreen.storyboard */; };
 		DCCBF44F219A10D10093A251 /* NYTMostPopularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF44E219A10D10093A251 /* NYTMostPopularTests.swift */; };
 		DCCBF45A219A10D20093A251 /* NYTMostPopularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF459219A10D20093A251 /* NYTMostPopularUITests.swift */; };
+		DCCBF46B219A24D70093A251 /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF46A219A24D70093A251 /* MasterVC.swift */; };
+		DCCBF46E219A27970093A251 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF46D219A27970093A251 /* Constants.swift */; };
+		DCCBF470219A29120093A251 /* MasterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF46F219A29120093A251 /* MasterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,6 @@
 		ACA899B466DE7DB6C3BE6853 /* Pods-NYTMostPopularUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTMostPopularUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTMostPopularUITests/Pods-NYTMostPopularUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DCCBF436219A10D00093A251 /* NYTMostPopular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTMostPopular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCBF439219A10D00093A251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCCBF43B219A10D00093A251 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCCBF43E219A10D00093A251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCCBF440219A10D10093A251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCCBF443219A10D10093A251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +59,9 @@
 		DCCBF455219A10D10093A251 /* NYTMostPopularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTMostPopularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCBF459219A10D20093A251 /* NYTMostPopularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTMostPopularUITests.swift; sourceTree = "<group>"; };
 		DCCBF45B219A10D20093A251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCCBF46A219A24D70093A251 /* MasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVC.swift; sourceTree = "<group>"; };
+		DCCBF46D219A27970093A251 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DCCBF46F219A29120093A251 /* MasterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCell.swift; sourceTree = "<group>"; };
 		FB4A090BA59DB8F6B9737DC8 /* Pods-NYTMostPopularTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTMostPopularTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTMostPopularTests/Pods-NYTMostPopularTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,8 +141,11 @@
 		DCCBF438219A10D00093A251 /* NYTMostPopular */ = {
 			isa = PBXGroup;
 			children = (
+				DCCBF46C219A27850093A251 /* Helpers */,
+				DCCBF467219A23C20093A251 /* Model */,
+				DCCBF468219A23CE0093A251 /* View */,
+				DCCBF469219A23D50093A251 /* Controller */,
 				DCCBF439219A10D00093A251 /* AppDelegate.swift */,
-				DCCBF43B219A10D00093A251 /* ViewController.swift */,
 				DCCBF43D219A10D00093A251 /* Main.storyboard */,
 				DCCBF442219A10D10093A251 /* LaunchScreen.storyboard */,
 				DCCBF440219A10D10093A251 /* Assets.xcassets */,
@@ -163,6 +170,37 @@
 				DCCBF45B219A10D20093A251 /* Info.plist */,
 			);
 			path = NYTMostPopularUITests;
+			sourceTree = "<group>";
+		};
+		DCCBF467219A23C20093A251 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCCBF468219A23CE0093A251 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCCBF46F219A29120093A251 /* MasterCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DCCBF469219A23D50093A251 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCCBF46A219A24D70093A251 /* MasterVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DCCBF46C219A27850093A251 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DCCBF46D219A27970093A251 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,8 +495,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCCBF43C219A10D00093A251 /* ViewController.swift in Sources */,
+				DCCBF46B219A24D70093A251 /* MasterVC.swift in Sources */,
 				DCCBF43A219A10D00093A251 /* AppDelegate.swift in Sources */,
+				DCCBF46E219A27970093A251 /* Constants.swift in Sources */,
+				DCCBF470219A29120093A251 /* MasterCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,7 +678,10 @@
 				DEVELOPMENT_TEAM = N455B9353D;
 				INFOPLIST_FILE = NYTMostPopular/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binshakerr.NYTMostPopular;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -655,7 +698,10 @@
 				DEVELOPMENT_TEAM = N455B9353D;
 				INFOPLIST_FILE = NYTMostPopular/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binshakerr.NYTMostPopular;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -672,7 +718,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N455B9353D;
 				INFOPLIST_FILE = NYTMostPopularTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binshakerr.NYTMostPopularTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -690,7 +740,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N455B9353D;
 				INFOPLIST_FILE = NYTMostPopularTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binshakerr.NYTMostPopularTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -707,7 +761,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N455B9353D;
 				INFOPLIST_FILE = NYTMostPopularUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binshakerr.NYTMostPopularUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -724,7 +782,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N455B9353D;
 				INFOPLIST_FILE = NYTMostPopularUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binshakerr.NYTMostPopularUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
