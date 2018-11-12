@@ -19,6 +19,8 @@
 		DCCBF46B219A24D70093A251 /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF46A219A24D70093A251 /* MasterVC.swift */; };
 		DCCBF46E219A27970093A251 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF46D219A27970093A251 /* Constants.swift */; };
 		DCCBF470219A29120093A251 /* MasterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF46F219A29120093A251 /* MasterCell.swift */; };
+		DCCBF473219A2AAB0093A251 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF472219A2AAB0093A251 /* ConnectionManager.swift */; };
+		DCCBF475219A2AE20093A251 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF474219A2AE20093A251 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		DCCBF46A219A24D70093A251 /* MasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVC.swift; sourceTree = "<group>"; };
 		DCCBF46D219A27970093A251 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DCCBF46F219A29120093A251 /* MasterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCell.swift; sourceTree = "<group>"; };
+		DCCBF472219A2AAB0093A251 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		DCCBF474219A2AE20093A251 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		FB4A090BA59DB8F6B9737DC8 /* Pods-NYTMostPopularTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTMostPopularTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTMostPopularTests/Pods-NYTMostPopularTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +145,7 @@
 		DCCBF438219A10D00093A251 /* NYTMostPopular */ = {
 			isa = PBXGroup;
 			children = (
+				DCCBF471219A2A620093A251 /* Networking */,
 				DCCBF46C219A27850093A251 /* Helpers */,
 				DCCBF467219A23C20093A251 /* Model */,
 				DCCBF468219A23CE0093A251 /* View */,
@@ -201,6 +206,15 @@
 				DCCBF46D219A27970093A251 /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DCCBF471219A2A620093A251 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DCCBF472219A2AAB0093A251 /* ConnectionManager.swift */,
+				DCCBF474219A2AE20093A251 /* APIManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,6 +509,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCCBF475219A2AE20093A251 /* APIManager.swift in Sources */,
+				DCCBF473219A2AAB0093A251 /* ConnectionManager.swift in Sources */,
 				DCCBF46B219A24D70093A251 /* MasterVC.swift in Sources */,
 				DCCBF43A219A10D00093A251 /* AppDelegate.swift in Sources */,
 				DCCBF46E219A27970093A251 /* Constants.swift in Sources */,
