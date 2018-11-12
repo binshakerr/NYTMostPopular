@@ -9,5 +9,5 @@
 import Foundation
 
 let kBaseUrl = "https://api.nytimes.com"
-let kMostPopularUrl = kBaseUrl + "/svc/mostpopular/v2/mostviewed"
+let kMostPopularUrl = "/svc/mostpopular/v2/mostviewed/all-sections"
 let kApiKey = "cb792ba30d3c44e5965ac2edefc23816"

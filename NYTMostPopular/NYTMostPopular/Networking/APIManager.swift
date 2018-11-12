@@ -13,6 +13,20 @@ class APIManager {
     
     static let shared = APIManager()
 
-    
+    func getHit(completed: @escaping (Hit?, Error?)->()) {
+        let url = "\(kMostPopularUrl)/7.json?api-key=\(kApiKey)"
+        
+        ConnectionManager.shared.fetchCodableObject(method: .get, url: url, parameters: nil, encoding: JSONEncoding.default) { (result, error) in
+            guard let json = result else {return}
+            
+            do {
+                let hit = try JSONDecoder().decode(Hit.self, from: json)
+                completed(hit, nil)
+            } catch let error {
+                print("Error creating object from JSON: \(error.localizedDescription)")
+                completed(nil, error)
+            }
+        }
+    }
     
 }
