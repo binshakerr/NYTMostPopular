@@ -17,6 +17,11 @@ class APIManager {
         let url = "\(kMostPopularUrl)/7.json?api-key=\(kApiKey)"
         
         ConnectionManager.shared.fetchCodableObject(method: .get, url: url, parameters: nil, encoding: JSONEncoding.default) { (result, error) in
+            
+            if error != nil {
+                completed(nil, error!)
+            }
+            
             guard let json = result else {return}
             
             do {

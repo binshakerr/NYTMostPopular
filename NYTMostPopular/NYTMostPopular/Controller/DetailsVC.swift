@@ -44,6 +44,15 @@ class DetailsVC: UIViewController, WKNavigationDelegate {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if webView != nil {
+            webView.stopLoading()
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        }
+    }
+    
     
     
     @IBAction func shareBtnPressed(_ sender: Any) {
