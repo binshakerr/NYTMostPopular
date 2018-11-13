@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,10 +43,35 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="NY Times Most Popular" id="v9q-m4-B64"/>
+                    <connections>
+                        <segue destination="LOW-CO-b32" kind="show" identifier="openDetails" id="X46-yH-klO"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8h-z0-AON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1028" y="73.313343328335833"/>
+        </scene>
+        <!--DetailsVC-->
+        <scene sceneID="F5u-Cj-J6n">
+            <objects>
+                <viewController id="LOW-CO-b32" customClass="DetailsVC" customModule="NYTMostPopular" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dlW-Na-ggS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Riw-7W-QMn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xgg-BD-eMD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="FbW-2P-3Sb">
+                            <connections>
+                                <action selector="shareBtnPressed:" destination="LOW-CO-b32" id="qce-jp-W6z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UaN-Hz-XKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1754" y="73"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4zG-zb-QJI">

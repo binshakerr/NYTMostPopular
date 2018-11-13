@@ -11,6 +11,7 @@ import UIKit
 class MasterVC: UITableViewController {
     
     var results = [Result]()
+    var selectedResult : Result?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,14 @@ class MasterVC: UITableViewController {
             }
         }
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "openDetails" {
+            let vc = segue.destination as! DetailsVC
+            vc.passedResult = selectedResult
+        }
+    }
 
     // MARK: - Table view data source
 
@@ -47,9 +56,15 @@ class MasterVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MasterCell", for: indexPath) as! MasterCell
-
-
+        cell.result = results[indexPath.row]
         return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        selectedResult = results[indexPath.row]
+        performSegue(withIdentifier: "openDetails", sender: nil)
     }
     
     

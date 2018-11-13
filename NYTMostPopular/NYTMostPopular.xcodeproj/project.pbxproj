@@ -26,6 +26,7 @@
 		DCCBF47B219A2E510093A251 /* Facet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF47A219A2E510093A251 /* Facet.swift */; };
 		DCCBF47D219A2F970093A251 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF47C219A2F970093A251 /* Extensions.swift */; };
 		DCCBF47F219A300E0093A251 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF47E219A300E0093A251 /* Helpers.swift */; };
+		DCCBF481219A5A5C0093A251 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBF480219A5A5C0093A251 /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		DCCBF47A219A2E510093A251 /* Facet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facet.swift; sourceTree = "<group>"; };
 		DCCBF47C219A2F970093A251 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DCCBF47E219A300E0093A251 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		DCCBF480219A5A5C0093A251 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		FB4A090BA59DB8F6B9737DC8 /* Pods-NYTMostPopularTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTMostPopularTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTMostPopularTests/Pods-NYTMostPopularTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				DCCBF46A219A24D70093A251 /* MasterVC.swift */,
+				DCCBF480219A5A5C0093A251 /* DetailsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCCBF477219A2DE90093A251 /* Hit.swift in Sources */,
+				DCCBF481219A5A5C0093A251 /* DetailsVC.swift in Sources */,
 				DCCBF475219A2AE20093A251 /* APIManager.swift in Sources */,
 				DCCBF473219A2AAB0093A251 /* ConnectionManager.swift in Sources */,
 				DCCBF46B219A24D70093A251 /* MasterVC.swift in Sources */,

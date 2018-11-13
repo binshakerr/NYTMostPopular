@@ -9,15 +9,18 @@
 import UIKit
 
 class MasterCell: UITableViewCell {
+    
+    var result: Result! {
+        didSet {
+            
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
 
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
+    
 
 }
