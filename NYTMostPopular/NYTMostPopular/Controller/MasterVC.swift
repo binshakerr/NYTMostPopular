@@ -42,8 +42,9 @@ class MasterVC: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openDetails" {
-            let vc = segue.destination as! DetailsVC
-            vc.passedResult = selectedResult
+            let nav = segue.destination as! UINavigationController
+            let controller = nav.topViewController as! DetailsVC
+            controller.passedResult = selectedResult
         }
     }
 

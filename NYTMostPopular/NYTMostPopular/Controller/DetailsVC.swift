@@ -47,10 +47,12 @@ class DetailsVC: UIViewController, WKNavigationDelegate {
     
     
     @IBAction func shareBtnPressed(_ sender: Any) {
-        let url = passedResult?.url
-        let activityViewController = UIActivityViewController(activityItems: [url!], applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
-        self.present(activityViewController, animated: true, completion: nil)
+        if let url = passedResult?.url {
+            let activityViewController = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+            self.present(activityViewController, animated: true, completion: nil)
+        }
+        
     }
     
     
